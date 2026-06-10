@@ -1,10 +1,10 @@
 {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "MarketraAI",
-  "url": "https://marketraai.com",
-  "logo": "https://marketraai.com/logo.png",
-  "description": "MarketraAI is an AI-powered marketing brand helping startups and local businesses grow with digital marketing, automation, content creation, ads, SEO, analytics, and AI solutions.",
+  "name": "Ambivora",
+  "url": "https://ambivora.com",
+  "logo": "https://ambivora.com/logo.png",
+  "description": "Ambivora is an AI-powered marketing brand helping startups and local businesses grow with digital marketing, automation, content creation, ads, SEO, analytics, and AI solutions.",
   "founder": {
     "@type": "Person",
     "name": "Himanshu Vishwakarma",
