@@ -144,14 +144,51 @@
 
       input.value = "";
 
-      setTimeout(() => {
-        chatBox.innerHTML += `
-          <div class="message bot">
-            This is demo reply. Next step me hum isko real AI se connect karenge.
-          </div>
-        `;
-        chatBox.scrollTop = chatBox.scrollHeight;
-      }, 600);
+      async function sendMessage() {
+  const input = document.getElementById("userInput");
+  const chatBox = document.getElementById("chatBox");
+  const message = input.value.trim();
+
+  if (!message) return;
+
+  chatBox.innerHTML += `<div class="message user">${message}</div>`;
+  input.value = "";
+
+  chatBox.innerHTML += `
+    <div class="message bot" id="loading">
+      Thinking...
+    </div>
+  `;
+
+  chatBox.scrollTop = chatBox.scrollHeight;
+
+  try {
+    const response = await fetch("/api/chat", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        message: message
+      })
+    });
+
+    const data = await response.json();
+
+    document.getElementById("loading").remove();
+
+    chatBox.innerHTML += `
+      <div class="message bot">
+        ${data.reply}
+      </div>
+    `;
+  } catch (error) {
+    document.getElementById("loading").innerHTML =
+      "Error connecting to AI.";
+  }
+
+  chatBox.scrollTop = chatBox.scrollHeight;
+    }
 
       chatBox.scrollTop = chatBox.scrollHeight;
     }
