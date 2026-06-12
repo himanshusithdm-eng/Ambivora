@@ -13,7 +13,7 @@ export default async function handler(req, res) {
         "Authorization": `Bearer ${process.env.SAMBANOVA_API_KEY}`
       },
       body: JSON.stringify({
-        model: "Meta-Llama-3.1-8B-Instruct",
+       model: "gpt-oss-120b",
         messages: [
           {
             role: "system",
