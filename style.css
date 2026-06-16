@@ -83,54 +83,6 @@
 }
 
 
-<!---about us-->
-.about-section {
-  padding: 80px 0;
-}
-
-.about-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-  margin-top: 30px;
-}
-
-.about-card {
-  background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.035));
-  border: 1px solid var(--line);
-  border-radius: 24px;
-  padding: 26px;
-  transition: .28s;
-}
-
-.about-card:hover {
-  transform: translateY(-6px);
-  border-color: rgba(0,163,255,.45);
-}
-
-.about-card h3 {
-  font-size: 22px;
-  margin-bottom: 10px;
-  color: #8ddcff;
-}
-
-.about-card p {
-  color: var(--muted);
-  line-height: 1.7;
-}
-
-@media(max-width:900px){
-  .about-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media(max-width:620px){
-  .about-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 
 .blog .btn,
 .blog a.btn {
@@ -152,7 +104,6 @@
   transform: translateY(-2px);
   box-shadow: 0 20px 50px rgba(0,163,255,.32);
 }
-
 
 
 .about-page {
