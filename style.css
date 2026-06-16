@@ -281,3 +281,108 @@
     padding: 70px 0;
   }
 }
+
+
+/* PREMIUM ABOUT PAGE FINAL */
+
+.about-page{
+  background:
+    radial-gradient(circle at 10% 10%,rgba(0,163,255,.18),transparent 26%),
+    radial-gradient(circle at 90% 0%,rgba(79,70,229,.20),transparent 26%),
+    var(--navy);
+}
+
+.premium-about-hero{
+  position:relative;
+  padding:120px 0 100px;
+  text-align:center;
+  overflow:hidden;
+  background:transparent;
+}
+
+.premium-about-hero h1{
+  max-width:1100px;
+  margin:0 auto 28px;
+  font-size:clamp(48px,7vw,92px);
+  line-height:1.05;
+  letter-spacing:-3px;
+  color:#ffffff;
+}
+
+.gradient-text,
+.premium-title{
+  background:linear-gradient(135deg,#ffffff 10%,#7ddcff 55%,#7567ff 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+}
+
+.premium-about-hero p{
+  max-width:900px;
+  margin:auto;
+  font-size:22px;
+  line-height:1.8;
+  color:#a9c8ff;
+}
+
+.about-section{
+  padding:100px 0;
+  border-top:none !important;
+  background:transparent !important;
+}
+
+.mission-section,
+.why-section{
+  background:transparent !important;
+}
+
+.premium-title{
+  font-size:clamp(42px,6vw,78px);
+  line-height:1.05;
+  letter-spacing:-2px;
+  font-weight:800;
+  margin-bottom:30px;
+}
+
+.about-grid p,
+.founder-content p{
+  color:#b7c9ea;
+  font-size:19px;
+  line-height:1.9;
+}
+
+.service-cards{
+  margin-top:50px;
+}
+
+.about-card{
+  position:relative;
+  overflow:hidden;
+  backdrop-filter:blur(12px);
+}
+
+.about-card::before{
+  content:"";
+  position:absolute;
+  width:140px;
+  height:140px;
+  right:-45px;
+  bottom:-45px;
+  border-radius:50%;
+  background:rgba(0,163,255,.14);
+  filter:blur(18px);
+}
+
+.about-card h3,
+.about-card p{
+  position:relative;
+  z-index:2;
+}
+
+.about-card:hover{
+  transform:translateY(-10px);
+}
+
+.why-list{
+  margin-top:50px;
+}
