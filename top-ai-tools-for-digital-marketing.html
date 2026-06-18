@@ -3,10 +3,231 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>About Ambivora | AI-Powered Digital Marketing Agency</title>
-  <meta name="description" content="Ambivora is an AI-powered digital marketing agency helping businesses grow through SEO, social media marketing, Meta Ads, AI chatbots, website solutions, and automation.">
+  <title>Top AI Tools for Digital Marketing in 2026 | Ambivora</title>
+  <meta name="description" content="Explore the top AI tools for digital marketing in 2026, including ChatGPT, Canva AI, Surfer SEO, Jasper, Opus Clip, Midjourney, Grammarly, Notion AI, HubSpot AI, and Zapier.">
   <link rel="icon" type="image/png" href="assets/logo.png">
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    .article-page {
+      background:
+        radial-gradient(circle at 10% 8%, rgba(0,163,255,.18), transparent 26%),
+        radial-gradient(circle at 88% 0%, rgba(79,70,229,.22), transparent 28%),
+        var(--navy);
+      color: var(--text);
+      overflow: hidden;
+    }
+
+    .article-hero {
+      position: relative;
+      padding: 110px 0 70px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .article-hero::before {
+      content: "";
+      position: absolute;
+      width: 420px;
+      height: 420px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0,163,255,.26), transparent 65%);
+      filter: blur(30px);
+      top: -150px;
+      left: -130px;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .article-hero::after {
+      content: "";
+      position: absolute;
+      width: 360px;
+      height: 360px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(79,70,229,.28), transparent 65%);
+      filter: blur(32px);
+      right: -110px;
+      bottom: -120px;
+      animation: float 7s ease-in-out infinite;
+    }
+
+    .article-hero .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .article-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 20px;
+      border-radius: 999px;
+      border: 1px solid rgba(0,163,255,.38);
+      background: rgba(255,255,255,.06);
+      color: #8ddcff;
+      font-size: 14px;
+      font-weight: 800;
+      margin-bottom: 24px;
+      box-shadow: 0 18px 45px rgba(0,163,255,.10);
+    }
+
+    .article-hero h1 {
+      max-width: 1120px;
+      margin: 0 auto 24px;
+      font-size: clamp(42px, 7vw, 86px);
+      line-height: 1.04;
+      letter-spacing: -3px;
+      color: #fff;
+    }
+
+    .article-hero h1 span {
+      background: linear-gradient(135deg,#fff 10%,#7ddcff 55%,#7567ff 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .article-hero p {
+      max-width: 850px;
+      margin: auto;
+      color: #a9c8ff;
+      font-size: 20px;
+      line-height: 1.8;
+    }
+
+    .article-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 320px;
+      gap: 28px;
+      align-items: start;
+      padding: 35px 0 100px;
+    }
+
+    .article-content {
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.035));
+      border-radius: 34px;
+      padding: clamp(24px, 4vw, 52px);
+      box-shadow: 0 30px 90px rgba(0,0,0,.25);
+      backdrop-filter: blur(14px);
+    }
+
+    .article-content h2 {
+      margin: 46px 0 16px;
+      font-size: clamp(28px, 4vw, 46px);
+      line-height: 1.12;
+      letter-spacing: -1.4px;
+      background: linear-gradient(135deg,#fff 10%,#7ddcff 55%,#7567ff 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .article-content h2:first-child {
+      margin-top: 0;
+    }
+
+    .article-content h3 {
+      margin: 30px 0 12px;
+      color: #8ddcff;
+      font-size: 22px;
+    }
+
+    .article-content p {
+      color: #b7c9ea;
+      font-size: 17px;
+      line-height: 1.9;
+      margin: 0 0 18px;
+    }
+
+    .article-content ul {
+      margin: 18px 0 28px;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 12px;
+    }
+
+    .article-content li {
+      color: #dcecff;
+      line-height: 1.7;
+      padding: 14px 16px;
+      border-radius: 16px;
+      border-left: 4px solid var(--blue);
+      background: rgba(255,255,255,.055);
+    }
+
+    .article-divider {
+      height: 1px;
+      margin: 42px 0;
+      background: linear-gradient(90deg, transparent, rgba(0,163,255,.45), transparent);
+    }
+
+    .article-sidebar {
+      position: sticky;
+      top: 95px;
+      display: grid;
+      gap: 18px;
+    }
+
+    .sidebar-card {
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.035));
+      border-radius: 26px;
+      padding: 24px;
+      backdrop-filter: blur(14px);
+    }
+
+    .sidebar-card h3 {
+      color: #fff;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .sidebar-card p {
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    .mini-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .mini-list span {
+      color: #cfe6ff;
+      padding: 11px 13px;
+      border-radius: 14px;
+      background: rgba(255,255,255,.055);
+      border: 1px solid rgba(255,255,255,.08);
+      font-size: 14px;
+    }
+
+    @media(max-width: 980px) {
+      .article-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .article-sidebar {
+        position: static;
+      }
+    }
+
+    @media(max-width: 620px) {
+      .article-hero {
+        padding: 80px 0 45px;
+      }
+
+      .article-hero h1 {
+        letter-spacing: -1.6px;
+      }
+
+      .article-content {
+        border-radius: 24px;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -20,9 +241,9 @@
 
     <div class="links">
       <a href="index.html">Home</a>
-      <a class="active" href="about.html">About</a>
+      <a href="about.html">About</a>
       <a href="services.html">Services</a>
-      <a href="blogs.html">Blogs</a>
+      <a class="active" href="blogs.html">Blogs</a>
       <a href="contact.html">Contact</a>
     </div>
 
@@ -31,113 +252,341 @@
   </div>
 </nav>
 
-<main class="about-page">
+<main class="article-page">
 
-  <section class="about-hero premium-about-hero">
-    <div class="container">
-      <span class="section-tag">About Ambivora</span>
-      <h1>
-        AI-Powered Digital Marketing for
-        <span class="gradient-text">Ambitious Businesses</span>
-      </h1>
+  <section class="article-hero">
+    <div class="container reveal">
+      <div class="article-badge">Marketing + AI Guide</div>
+      <h1>Top AI Tools for <span>Digital Marketing in 2026</span></h1>
       <p>
-        We combine AI, strategy, creativity and execution to help startups and local businesses grow smarter, faster and stronger online.
+        A complete guide for marketers, startups and businesses to understand the best AI tools for content, SEO, ads, automation, design and growth.
       </p>
     </div>
   </section>
 
-  <section class="about-section mission-section">
-    <div class="container about-grid">
-      <div>
-        <h2 class="premium-title">Our Mission</h2>
+  <section class="container article-layout">
+    <article class="article-content reveal">
+      <p>Digital marketing is evolving faster than ever before. A few years ago, marketers spent hours writing blog posts, creating social media content, designing creatives, researching keywords, and analyzing campaign performance. Today, Artificial Intelligence (AI) is helping businesses complete many of these tasks in a fraction of the time.</p>
+<p>But here&#x27;s the reality: AI is not replacing marketers.It&#x27;s helping marketers become more productive, more creative, and more strategic. Whether you&#x27;re a startup founder, small business owner, freelancer, content creator, or marketing agency, the right AI tools can help you create better content, improve SEO performance, automate repetitive tasks, and achieve better marketing results. The challenge is knowing which tools are actually worth using.</p>
+<p>In this guide, we&#x27;ll explore the best AI tools for digital marketing in 2026, how they work, and why they&#x27;re becoming essential for modern businesses.</p>
+<h2>Why AI Is Transforming Digital Marketing</h2>
+<p>The demands on marketers have never been higher.</p>
+<p>Today, businesses are expected to:</p>
+<ul>
+<li>Create high-quality content consistently</li>
+<li>Manage multiple social media platforms</li>
+<li>Run paid advertising campaigns</li>
+<li>Improve SEO rankings</li>
+<li>Generate leads</li>
+<li>Analyze customer behavior</li>
+<li>Deliver personalized experiences</li>
+</ul>
+<p>Doing all of this manually is time-consuming and expensive.</p>
+<p>That&#x27;s why AI-powered marketing tools have become so popular.</p>
+<p>According to recent industry reports:</p>
+<ul>
+<li>More than 80% of marketers are already using AI in some part of their workflow.</li>
+<li>AI-powered personalization can significantly improve customer engagement and conversion rates.</li>
+<li>Marketing teams using AI report higher productivity and faster content production.</li>
+<li>Businesses are increasingly investing in AI marketing automation to save time and improve efficiency.</li>
+</ul>
+<p>Instead of replacing human creativity, AI handles repetitive tasks and provides data-driven insights, allowing marketers to focus on strategy and growth.</p>
+<p>Let&#x27;s look at some of the most powerful AI tools available today.</p>
+<div class="article-divider"></div>
+<h2>1. ChatGPT – The Ultimate AI Marketing Assistant</h2>
+<p>When people talk about AI for marketing, ChatGPT is often the first tool that comes to mind.</p>
+<p>And for good reason.</p>
+<p>ChatGPT has become one of the most versatile AI tools available, helping marketers generate ideas, create content, conduct research, and improve productivity.</p>
+<h2>Best Uses</h2>
+<ul>
+<li>Blog writing</li>
+<li>Social media content creation</li>
+<li>Email marketing</li>
+<li>Ad copy generation</li>
+<li>Content strategy</li>
+<li>Keyword research support</li>
+<li>Marketing brainstorming</li>
+</ul>
+<h2>Why Marketers Love It</h2>
+<p>Instead of spending an hour thinking about what to post on LinkedIn or Instagram, marketers can generate multiple content ideas within minutes.</p>
+<p>It acts like a digital assistant that helps overcome writer&#x27;s block and speeds up content creation.</p>
+<h3>SEO Keyword Opportunities</h3>
+<ul>
+<li>ChatGPT for marketing</li>
+<li>AI content writing tools</li>
+<li>AI copywriting software</li>
+<li>AI blogging tools</li>
+</ul>
+<div class="article-divider"></div>
+<h2>2. Canva AI – The Best AI Design Tool for Marketers</h2>
+<p>Visual content plays a huge role in digital marketing success.</p>
+<p>Posts with strong visuals often attract more attention and engagement than text-only content.</p>
+<p>Canva AI makes professional design accessible to everyone, even without graphic design experience.</p>
+<h2>Best Uses</h2>
+<ul>
+<li>Instagram posts</li>
+<li>LinkedIn carousels</li>
+<li>Marketing presentations</li>
+<li>Ad creatives</li>
+<li>Social media graphics</li>
+<li>Brand assets</li>
+</ul>
+<h2>Popular AI Features</h2>
+<ul>
+<li>Magic Design</li>
+<li>AI Image Generation</li>
+<li>Background Remover</li>
+<li>Magic Resize</li>
+<li>AI Content Suggestions</li>
+</ul>
+<h2>Why It Matters</h2>
+<p>Small businesses and startups can create professional marketing designs without hiring a full-time designer.</p>
+<h3>SEO Keyword Opportunities</h3>
+<ul>
+<li>AI graphic design tools</li>
+<li>Canva AI features</li>
+<li>AI design software</li>
+<li>Social media design tools</li>
+</ul>
+<div class="article-divider"></div>
+<h2>3. Surfer SEO – One of the Best AI SEO Tools</h2>
+<p>Creating content is only half the battle.</p>
+<p>Getting that content to rank on Google is where the real challenge begins.</p>
+<p>Surfer SEO helps marketers optimize content using data from top-ranking pages.</p>
+<h2>Best Uses</h2>
+<ul>
+<li>Content optimization</li>
+<li>Keyword research</li>
+<li>On-page SEO</li>
+<li>SEO audits</li>
+<li>Competitor analysis</li>
+</ul>
+<h2>Why Marketers Use It</h2>
+<p>Instead of guessing what Google wants, Surfer SEO provides data-driven recommendations to improve rankings.</p>
+<p>For businesses focused on organic traffic, it can become a valuable part of the content marketing process.</p>
+<h3>SEO Keyword Opportunities</h3>
+<ul>
+<li>AI SEO tools</li>
+<li>SEO content optimization</li>
+<li>AI keyword research tools</li>
+<li>Content optimization software</li>
+</ul>
+<div class="article-divider"></div>
+<h2>4. Jasper AI – Built for Content Marketing Teams</h2>
+<p>Jasper AI is designed specifically for businesses and marketing teams that need to produce content at scale.</p>
+<p>It helps create content while maintaining a consistent brand voice.</p>
+<h2>Best Uses</h2>
+<ul>
+<li>Landing pages</li>
+<li>Product descriptions</li>
+<li>Marketing emails</li>
+<li>Website copy</li>
+<li>Long-form content</li>
+</ul>
+<h2>Why It Matters</h2>
+<p>As businesses grow, maintaining consistency across multiple content channels becomes challenging.</p>
+<p>Jasper helps streamline that process.</p>
+<h3>SEO Keyword Opportunities</h3>
+<ul>
+<li>Jasper AI review</li>
+<li>AI content marketing tools</li>
+<li>AI copywriting software</li>
+<li>AI writing assistant</li>
+</ul>
+<div class="article-divider"></div>
+<h2>5. Opus Clip – The Best AI Video Repurposing Tool</h2>
+<p>Short-form video continues to dominate social media.</p>
+<p>Platforms like Instagram Reels, TikTok, and YouTube Shorts have completely changed how people consume content.</p>
+<p>Opus Clip helps businesses turn long videos into multiple short-form clips automatically.</p>
+<h2>Best Uses</h2>
+<ul>
+<li>Instagram Reels</li>
+<li>YouTube Shorts</li>
+<li>TikTok content</li>
+<li>Podcast clips</li>
+<li>Webinar highlights</li>
+</ul>
+<h2>Why Marketers Use It</h2>
+<p>Instead of creating content from scratch, businesses can repurpose existing videos and extend their reach.</p>
+<p>A single podcast episode can generate weeks of social media content.</p>
+<h3>SEO Keyword Opportunities</h3>
+<ul>
+<li>AI video editing tools</li>
+<li>AI video marketing software</li>
+<li>Best AI video tools</li>
+<li>AI content repurposing</li>
+</ul>
+<div class="article-divider"></div>
+<h2>6. Midjourney – AI-Powered Image Creation</h2>
+<p>Creating unique visual content has become increasingly important in crowded social feeds.</p>
+<p>Midjourney allows marketers to generate custom images using text prompts.</p>
+<h2>Best Uses</h2>
+<ul>
+<li>Advertising campaigns</li>
+<li>Concept art</li>
+<li>Social media visuals</li>
+<li>Creative branding projects</li>
+</ul>
+<h2>Why It Matters</h2>
+<p>Original visuals help brands stand out and create stronger audience engagement.</p>
+<h3>SEO Keyword Opportunities</h3>
+<ul>
+<li>AI image generator</li>
+<li>Midjourney AI</li>
+<li>AI marketing visuals</li>
+<li>AI-generated images</li>
+</ul>
+<div class="article-divider"></div>
+<h2>7. Grammarly – The Most Underrated AI Tool for Marketers</h2>
+<p>Sometimes the simplest tools provide the biggest value.</p>
+<p>Grammarly helps improve grammar, clarity, tone, and readability across all forms of communication.</p>
+<h2>Best Uses</h2>
+<ul>
+<li>Blog editing</li>
+<li>Email writing</li>
+<li>Website content</li>
+<li>Social media captions</li>
+</ul>
+<h2>Why Marketers Use It</h2>
+<p>Better writing creates better communication, and better communication builds trust.</p>
+<h3>SEO Keyword Opportunities</h3>
+<ul>
+<li>AI writing assistant</li>
+<li>Grammarly AI</li>
+<li>Writing improvement tools</li>
+<li>Content editing software</li>
+</ul>
+<div class="article-divider"></div>
+<h2>8. Notion AI – Organize Your Entire Marketing Workflow</h2>
+<p>Marketing isn&#x27;t just about creating content.</p>
+<p>It&#x27;s also about managing projects, organizing ideas, tracking campaigns, and collaborating with teams.</p>
+<p>Notion AI helps streamline all of these activities.</p>
+<h2>Best Uses</h2>
+<ul>
+<li>Content planning</li>
+<li>Marketing documentation</li>
+<li>Team collaboration</li>
+<li>Campaign management</li>
+</ul>
+<h2>Why It Matters</h2>
+<p>A well-organized marketing process often leads to better execution and fewer missed opportunities.</p>
+<h3>SEO Keyword Opportunities</h3>
+<ul>
+<li>AI productivity tools</li>
+<li>Notion AI features</li>
+<li>Marketing workflow software</li>
+<li>Content planning tools</li>
+</ul>
+<div class="article-divider"></div>
+<h2>9. HubSpot AI – Smarter Marketing Automation</h2>
+<p>Generating leads is important.</p>
+<p>Managing and nurturing those leads effectively is what drives growth.</p>
+<p>HubSpot AI helps businesses automate customer journeys and improve marketing efficiency.</p>
+<h2>Best Uses</h2>
+<ul>
+<li>CRM management</li>
+<li>Email marketing</li>
+<li>Lead nurturing</li>
+<li>Customer segmentation</li>
+<li>Marketing automation</li>
+</ul>
+<h2>Why Marketers Use It</h2>
+<p>It allows businesses to create personalized customer experiences at scale.</p>
+<h3>SEO Keyword Opportunities</h3>
+<ul>
+<li>AI CRM software</li>
+<li>Marketing automation tools</li>
+<li>HubSpot AI</li>
+<li>AI lead generation tools</li>
+</ul>
+<div class="article-divider"></div>
+<h2>10. Zapier AI – Automate Repetitive Marketing Tasks</h2>
+<p>Most marketing teams use multiple tools every day.</p>
+<p>Zapier connects these tools and automates workflows between them.</p>
+<h2>Example Workflow</h2>
+<p>When a lead submits a form:</p>
+<ul>
+<li>CRM is updated automatically</li>
+<li>Welcome email is sent</li>
+<li>Team receives a notification</li>
+<li>Data is stored in a spreadsheet</li>
+</ul>
+<p>No manual work required.</p>
+<h2>Why It Matters</h2>
+<p>Automation saves time and reduces the risk of human error.</p>
+<h3>SEO Keyword Opportunities</h3>
+<ul>
+<li>AI automation tools</li>
+<li>Marketing workflow automation</li>
+<li>Zapier AI</li>
+<li>Business automation software</li>
+</ul>
+<div class="article-divider"></div>
+<h2>Emerging AI Marketing Trends for 2026</h2>
+<p>As AI continues to evolve, several trends are shaping the future of digital marketing:</p>
+<h3>AI-Powered Personalization</h3>
+<p>Brands are using AI to deliver more personalized experiences based on customer behavior and preferences.</p>
+<h3>AI Search Optimization</h3>
+<p>With AI-powered search engines becoming more popular, businesses need to optimize content beyond traditional SEO.</p>
+<h3>AI Chatbots and Customer Support</h3>
+<p>Modern AI chatbots are improving customer experiences by providing instant responses and 24/7 support.</p>
+<h3>AI Video Marketing</h3>
+<p>Short-form video content and AI-generated video creation tools continue to gain momentum.</p>
+<h3>Predictive Analytics</h3>
+<p>Businesses are increasingly using AI to predict customer behavior and improve decision-making.</p>
+<div class="article-divider"></div>
+<h2>How to Choose the Right AI Tool for Your Business</h2>
+<p>Before investing in AI software, ask yourself:</p>
+<ul>
+<li>Do I need help creating content?</li>
+<li>Do I need better SEO performance?</li>
+<li>Do I need design support?</li>
+<li>Do I need automation?</li>
+<li>Do I need video content creation?</li>
+<li>Do I need better lead management?</li>
+</ul>
+<p>The best AI tool isn&#x27;t necessarily the most popular one.</p>
+<p>It&#x27;s the one that solves your biggest business challenge.</p>
+<div class="article-divider"></div>
+<h2>Final Thoughts</h2>
+<p>Artificial Intelligence is no longer a futuristic concept in marketing.</p>
+<p>It&#x27;s already changing how businesses create content, engage customers, run campaigns, and grow online.</p>
+<p>Tools like ChatGPT, Canva AI, Surfer SEO, Jasper, Opus Clip, Midjourney, Grammarly, Notion AI, HubSpot AI, and Zapier are helping marketers work smarter and achieve better results.</p>
+<p>The future of digital marketing isn&#x27;t about choosing between humans and AI.</p>
+<p>It&#x27;s about combining human creativity, strategy, and storytelling with the speed and efficiency of AI.</p>
+<p>Businesses that learn to leverage both will have a significant advantage in the years ahead.</p>
+<div class="article-divider"></div>
+<h2>Frequently Asked Questions (FAQs)</h2>
+<h3>What are the best AI tools for digital marketing?</h3>
+<p>Some of the best AI tools for digital marketing include ChatGPT, Canva AI, Surfer SEO, Jasper AI, Opus Clip, Midjourney, Grammarly, Notion AI, HubSpot AI, and Zapier.</p>
+<h3>How is AI used in digital marketing?</h3>
+<p>AI is used for content creation, SEO optimization, social media marketing, marketing automation, customer support, data analysis, email marketing, and lead generation.</p>
+<h3>Can AI replace digital marketers?</h3>
+<p>No. AI can automate tasks and improve efficiency, but human creativity, strategy, storytelling, and relationship-building remain essential.</p>
+<h3>Which AI tool is best for SEO?</h3>
+<p>Surfer SEO, ChatGPT, and other AI-powered SEO platforms are widely used to improve content optimization and keyword strategy.</p>
+<h3>Is AI marketing worth it for small businesses?</h3>
+<p>Yes. AI tools can help small businesses save time, reduce costs, improve productivity, and compete more effectively online.</p>
+    </article>
+
+    <aside class="article-sidebar reveal">
+      <div class="sidebar-card">
+        <h3>Need AI Marketing Help?</h3>
+        <p>Ambivora helps brands use AI with strategy, creativity and execution.</p>
+        <a class="btn" href="contact.html">Work With Us</a>
       </div>
-      <p>
-        Ambivora was created with one clear mission — to make modern digital marketing simple, practical and growth-focused for businesses. We use AI to work faster, but we keep strategy, creativity and brand voice human.
-      </p>
-    </div>
-  </section>
 
-  <section class="about-section">
-    <div class="container">
-      <h2 class="premium-title">What We Do</h2>
-
-      <div class="service-cards">
-        <div class="about-card">
-          <h3>SEO + AI</h3>
-          <p>Search strategy, keyword research and AI-powered content planning.</p>
-        </div>
-
-        <div class="about-card">
-          <h3>Social Media Marketing</h3>
-          <p>Content, captions, reels and creative brand communication.</p>
-        </div>
-
-        <div class="about-card">
-          <h3>Meta Ads</h3>
-          <p>Facebook and Instagram campaigns focused on leads, reach and sales.</p>
-        </div>
-
-        <div class="about-card">
-          <h3>AI Chatbots</h3>
-          <p>Smart website chatbots that help customers get faster answers.</p>
-        </div>
-
-        <div class="about-card">
-          <h3>Website Solutions</h3>
-          <p>Modern websites built for trust, clarity and conversion.</p>
-        </div>
-
-        <div class="about-card">
-          <h3>Automation</h3>
-          <p>AI tools and workflows that save time and improve marketing execution.</p>
+      <div class="sidebar-card">
+        <h3>Topics Covered</h3>
+        <div class="mini-list">
+          <span>AI Content Tools</span>
+          <span>AI SEO Tools</span>
+          <span>AI Design Tools</span>
+          <span>AI Automation</span>
+          <span>AI Marketing Trends</span>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="about-section why-section">
-    <div class="container">
-      <h2 class="premium-title">Why Ambivora</h2>
-
-      <div class="why-list">
-        <div>Human creativity + AI-powered execution</div>
-        <div>Simple and practical marketing strategies</div>
-        <div>Focus on startups and local businesses</div>
-        <div>Affordable and growth-focused solutions</div>
-        <div>Clear communication and honest work</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="about-section founder-section">
-    <div class="container founder-grid">
-      <div class="founder-image">
-        <img src="assets/founder.png" alt="Himanshu Vishwakarma - Founder of Ambivora">
-      </div>
-
-      <div class="founder-content">
-        <h2 class="premium-title">Meet The Founder</h2>
-        <p>
-          Ambivora was founded by Himanshu Vishwakarma, a digital marketing professional with a background in BMS Finance and a Diploma in Digital Marketing. After learning the industry and working professionally, he started Ambivora with a mission to help startups and local businesses grow using AI-powered marketing.
-        </p>
-
-        <div class="founder-points">
-          <div>
-            <h4>BMS in Finance</h4>
-            <p>Built a strong foundation in business, finance, and decision-making.</p>
-          </div>
-          <div>
-            <h4>Digital Marketing</h4>
-            <p>Experienced in SEO, social media, content creation, ads, and AI tools.</p>
-          </div>
-        </div>
-
-        <div class="socials">
-          <a href="https://www.instagram.com/imaginaryhimanshu/">Personal Instagram</a>
-          <a href="https://www.linkedin.com/in/digitalhimanshu50/">Personal LinkedIn</a>
-        </div>
-      </div>
-    </div>
+    </aside>
   </section>
 
 </main>
@@ -151,5 +600,6 @@
 
 <a class="whatsapp" href="https://wa.me/917304382404">✆</a>
 <script src="script.js"></script>
+
 </body>
 </html>
