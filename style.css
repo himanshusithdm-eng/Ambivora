@@ -386,3 +386,10 @@
 .why-list{
   margin-top:50px;
 }
+
+.article-content,
+.article-sidebar {
+  opacity: 1 !important;
+  transform: none !important;
+  visibility: visible !important;
+}
