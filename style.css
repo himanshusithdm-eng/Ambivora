@@ -393,3 +393,67 @@
   transform: none !important;
   visibility: visible !important;
 }
+
+
+/* AMBIVORA 3D PREMIUM EFFECT */
+.hero-card,
+.card,
+.faq-box,
+.about-card,
+.metric {
+  transform-style: preserve-3d;
+  transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+}
+
+.hero-card:hover,
+.card:hover,
+.faq-box:hover,
+.about-card:hover,
+.metric:hover {
+  transform: perspective(1000px) rotateX(6deg) rotateY(-6deg) translateY(-10px) scale(1.02);
+  border-color: rgba(0,163,255,.65) !important;
+  box-shadow: 0 35px 90px rgba(0,163,255,.25);
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  right: 8%;
+  top: 18%;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #ffffff, #00A3FF 20%, #4f46e5 50%, transparent 72%);
+  filter: blur(2px);
+  opacity: .28;
+  animation: ambivora3dFloat 6s ease-in-out infinite;
+  z-index: -1;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+  background-size: 55px 55px;
+  transform: perspective(900px) rotateX(60deg) translateY(-160px);
+  transform-origin: top;
+  pointer-events: none;
+  z-index: -3;
+}
+
+@keyframes ambivora3dFloat {
+  0%,100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-28px) rotate(8deg); }
+}
+
+@media(max-width:768px){
+  .hero::after{
+    width:180px;
+    height:180px;
+    right:-40px;
+    top:120px;
+  }
+}
