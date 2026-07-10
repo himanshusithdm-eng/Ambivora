@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://ambivora.com/</loc><priority>1.00</priority></url>
-  <url><loc>https://ambivora.com/about.html</loc><priority>0.80</priority></url>
   <url><loc>https://ambivora.com/services.html</loc><priority>0.90</priority></url>
-  <url><loc>https://ambivora.com/blogs.html</loc><priority>0.70</priority></url>
+  <url><loc>https://ambivora.com/about.html</loc><priority>0.80</priority></url>
   <url><loc>https://ambivora.com/contact.html</loc><priority>0.80</priority></url>
+  <url><loc>https://ambivora.com/blogs.html</loc><priority>0.70</priority></url>
+  <url><loc>https://ambivora.com/ai-seo-strategies-for-local-businesses.html</loc><priority>0.70</priority></url>
+  <url><loc>https://ambivora.com/ai-chatbots-for-websites.html</loc><priority>0.70</priority></url>
+  <url><loc>https://ambivora.com/best-chatgpt-prompts-for-business-growth.html</loc><priority>0.70</priority></url>
+  <url><loc>https://ambivora.com/building-a-modern-brand-with-ai.html</loc><priority>0.70</priority></url>
+  <url><loc>https://ambivora.com/how-ai-can-improve-meta-ads.html</loc><priority>0.70</priority></url>
+  <url><loc>https://ambivora.com/top-ai-tools-for-digital-marketing.html</loc><priority>0.70</priority></url>
+  <url><loc>https://ambivora.com/ai.html</loc><priority>0.50</priority></url>
 </urlset>
